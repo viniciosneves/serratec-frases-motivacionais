@@ -6,7 +6,8 @@ function Rodape (props) {
     month: 'long',
     day: 'numeric'
   }
-  const data = props.criadaEm.toLocaleString('pt-BR', opcoes)
+  const data = props.criadaEm
+    .toLocaleString('pt-BR', opcoes)
   // Fragment
   return <>
     <p>
@@ -15,7 +16,6 @@ function Rodape (props) {
     <p>
       Postada em: <strong>{data}</strong>
     </p>
-    <hr />
   </>
   
 }
