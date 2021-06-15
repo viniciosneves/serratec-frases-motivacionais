@@ -1,12 +1,12 @@
 import './estilos.css'
 
-function FraseMotivacional () {
+function FraseMotivacional (props)  {
   return <div>
     <p className="frase">
-      São as nossas escolhas, mais do que as nossas capacidades, que mostram quem realmente somos
+      {props.frase}
     </p>
     <p>
-      Alvo Dumbledore
+      {props.autor}
     </p>
   </div>
 }
