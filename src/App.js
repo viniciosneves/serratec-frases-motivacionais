@@ -1,6 +1,8 @@
 import FraseMotivacional from 
   './componentes/FraseMotivacional/FraseMotivacional'
 
+import './App.css'
+
 function App() {
 
   const frases = [
@@ -19,10 +21,15 @@ function App() {
       autor: 'Autor desconhecido',
       criadaEm: new Date(2021, 5, 3)
     },
+    {
+      texto: 'toda e qualquer prisão é temporaria, apenas a liberdade é eterna',
+      autor: 'sant',
+      criadaEm: new Date(2021, 5, 4)
+    },
   ]
 
   return (
-    <div>
+    <div className="container">
       <h1>Frases motivacionais para alegrar o seu dia!!</h1>
       
       <FraseMotivacional 
@@ -32,6 +39,7 @@ function App() {
 
       <FraseMotivacional frase={frases[1].texto} autor={frases[1].autor} criadaEm={frases[1].criadaEm}/>
       <FraseMotivacional frase={frases[2].texto} autor={frases[2].autor} criadaEm={frases[2].criadaEm}/>
+      <FraseMotivacional frase={frases[3].texto} autor={frases[3].autor} criadaEm={frases[3].criadaEm}/>
     </div>
   );
 }

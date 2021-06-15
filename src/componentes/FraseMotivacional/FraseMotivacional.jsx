@@ -1,26 +1,17 @@
 import './estilos.css'
+import Rodape from './Rodape'
 
 function FraseMotivacional (props)  {
-
-  const opcoes = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }
-  const data = props.criadaEm.toLocaleString('pt-BR', opcoes)
 
   return <div>
     <p className="frase">
       - "{props.frase}"
     </p>
-    <p>
-      {props.autor}
-    </p>
-    <p>
-      Postada em: <strong>{data}</strong>
-    </p>
+    <Rodape 
+      autor={props.autor} 
+      criadaEm={props.criadaEm}/>
   </div>
 }
 
 export default FraseMotivacional
+
