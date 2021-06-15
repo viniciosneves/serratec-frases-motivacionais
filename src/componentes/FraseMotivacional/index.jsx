@@ -1,8 +1,7 @@
-import './estilos.css'
 import Rodape from './Rodape'
-import Card from '../Card/Card'
+import Card from '../Card'
 
-function FraseMotivacional (props)  {
+const FraseMotivacional = (props) => {
 
   return <Card>
     <p className="frase">

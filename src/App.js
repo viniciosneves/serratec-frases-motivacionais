@@ -1,9 +1,9 @@
 import FraseMotivacional from 
-  './componentes/FraseMotivacional/FraseMotivacional'
+  './componentes/FraseMotivacional'
 
 import './App.css'
 
-function App() {
+const App = () => {
 
   const frases = [
     {

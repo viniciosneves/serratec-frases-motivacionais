@@ -1,4 +1,7 @@
-function Rodape (props) {
+import React, { Fragment } from 'react'
+
+
+const Rodape = (props) => {
 
   const opcoes = {
     weekday: 'long',
@@ -8,8 +11,14 @@ function Rodape (props) {
   }
   const data = props.criadaEm
     .toLocaleString('pt-BR', opcoes)
-  // Fragment
-  return <>
+  // return React.createElement
+  // (
+  //   Fragment, {}, 
+  //   React.createElement('p', {}, props.autor),
+  //   React.createElement('p', {}, 'Postada em: ', React.createElement('strong', {}, data)),
+  // )
+// Fragment
+return <>
     <p>
       {props.autor}
     </p>
@@ -17,7 +26,6 @@ function Rodape (props) {
       Postada em: <strong>{data}</strong>
     </p>
   </>
-  
 }
 
 export default Rodape
