@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './estilos.css'
 
 const Formulario = () => {
-
+  
   const [autor, setAutor] = useState('')
   const [texto, setTexto] = useState('')
 
