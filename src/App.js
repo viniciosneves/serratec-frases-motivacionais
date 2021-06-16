@@ -2,6 +2,7 @@ import FraseMotivacional from
   './componentes/FraseMotivacional'
 
 import './App.css'
+import Formulario from './componentes/Formulario';
 
 const App = () => {
 
@@ -31,6 +32,8 @@ const App = () => {
   return (
     <div className="container">
       <h1>Frases motivacionais para alegrar o seu dia!!</h1>
+
+      <Formulario />
       
       <FraseMotivacional 
         frase={frases[0].texto} 
